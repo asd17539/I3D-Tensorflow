@@ -1,7 +1,7 @@
 # Train 3DCNN model
 ---
 ## 安裝Tensorflow GPU
-建立有掛GPU的VM 環境為ubuntu18.04
+環境為ubuntu18.04
 ### Setup
 ```linux
 sudo apt-get update
@@ -52,14 +52,24 @@ sudo pip install tensorflow-gpu
 cd ./list/ucf_list/
 sudo bash ./convert_images_to_list.sh /path/to/video_data
 ```
-### 3.Training model
-選擇Pre_Train的Model類型 以及設置Training Model的名稱
+### 3.修改checkpoint的路徑
+```linux
+cd ./checkpoints/
+sudo nano ./flow_imagenet/checkpoints
+sudo nano ./flow_scratch/checkpoints
+sudo nano ./rgb_imagenet/checkpoints
+sudo nano ./rgb_scratch/checkpoints
+```
+將路徑修改
+### 4.Training model
+選擇Pre_Train的Model類型 (line 46~47)
+設置Training Model的名稱 (line 49~50)
 ```linux
 cd ./experiments/ucf-101
 sudo python train_ucf_rgb.py
 sudo python train_ucf_flow.py
 ```
-### 4.Testing model
+### 5.Testing model
 選擇Training Model
 ```linux
 cd ./experiments/ucf-101
