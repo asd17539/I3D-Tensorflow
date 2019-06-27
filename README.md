@@ -1,4 +1,4 @@
-# Train 3DCNN model
+# Train I3D model
 ---
 ## 安裝Tensorflow GPU
 環境為ubuntu18.04
@@ -41,7 +41,7 @@ sudo apt-get update && \
 sudo pip install tensorflow-gpu
 ```
 ---
-## Train 3DCNN
+## Train I3D
 ### 1.利用DenseFlow提取光流
 ---
 [https://github.com/agethen/dense-flow](https://github.com/agethen/dense-flow)
