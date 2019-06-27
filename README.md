@@ -79,6 +79,6 @@ sudo python test_ucf_rgb+flow.py
 ```
 
 ---
-[https://github.com/LossNAN/I3D-Tensorflow](https://github.com/LossNAN/I3D-Tensorflow)
+原作者[https://github.com/LossNAN/I3D-Tensorflow](https://github.com/LossNAN/I3D-Tensorflow)
 
 ---
