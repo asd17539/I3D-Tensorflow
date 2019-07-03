@@ -62,8 +62,8 @@ sudo nano ./rgb_scratch/checkpoints
 ```
 將路徑修改
 ### 4.Training model
-選擇Pre_Train的Model類型 (line 46~47)
-設置Training Model的名稱 (line 49~50)
+選擇Pre_Train的Model類型 (line 46 ~ 47)
+設置Training Model的名稱 (line 49 ~ 50)
 ```linux
 cd ./experiments/ucf-101
 sudo python train_ucf_rgb.py
