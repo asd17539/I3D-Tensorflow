@@ -18,7 +18,7 @@ sudo apt-get update
 sudo wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
 sudo apt install ./nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb
 sudo apt-get update
-sudo apt-get install --no-install-recommends nvidia-driver-410
+sudo apt-get install --no-install-recommends nvidia-driver-418
 ```
 安裝完後務必重啟VM
 ```linux
@@ -29,12 +29,10 @@ nvidia-smi
 ```linux
 sudo apt-get install --no-install-recommends \
     cuda-10-0 \
-    libcudnn7=7.4.1.5-1+cuda10.0  \
-    libcudnn7-dev=7.4.1.5-1+cuda10.0
-sudo apt-get update && \
-        sudo apt-get install nvinfer-runtime-trt-repo-ubuntu1804-5.0.2-ga-cuda10.0 \
-        && sudo apt-get update \
-        && sudo apt-get install -y --no-install-recommends libnvinfer-dev=5.0.2-1+cuda10.0
+    libcudnn7=7.6.2.24-1+cuda10.0  \
+    libcudnn7-dev=7.6.2.24-1+cuda10.0
+sudo apt-get install -y --no-install-recommends libnvinfer5=5.1.5-1+cuda10.0 \
+    libnvinfer-dev=5.1.5-1+cuda10.0
 ```
 ### 安裝Tensorflow-GPU
 ```linux
