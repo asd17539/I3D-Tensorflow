@@ -41,10 +41,8 @@ sudo pip install tensorflow-gpu
 ---
 ## Train I3D
 ### 1.利用DenseFlow提取光流
----
 [https://github.com/agethen/dense-flow](https://github.com/agethen/dense-flow)
 
----
 ### 2.將資料及轉為train.list與test.list
 ```linux
 cd ./list/ucf_list/
